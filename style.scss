@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/**
+ * Settings 
+ * ---
+ * Globally-available settings.
+ * Config switches.
+ * Brand colors, etc.
+ * ---
+ * @example
+ * $primary-color: #FF69B4;
+ * $spacing-unit: 10px;
+ */
+
+/**
+ * Tools 
+ * ---
+ * Globally-available tools.
+ * Public mixins.
+ * Helper functions.
+ * ---
+ * @example
+ * @mixin font-brand() {
+ *   font-family: "UI Font", sans-serif;
+ *   font-weight: 400;
+ * }
+ */
+
+/**
+ * Generic
+ * ---
+ * Ground zero styles.
+ * Low-specificity, far-reaching.
+ * Resets, Normalize.css, etc.
+ * ---
+ * @example
+ * html {
+ *   -webkit-box-sizing: border-box;
+ *   -moz-box-sizing: border-box;
+ *   box-sizing: border-box;
+ * }
+ */
+
+/**
+ * Elements
+ * ---
+ * Unclassed HTML elements.
+ * H1-H6, basic links, lists, etc.
+ * Last layer we see type selectors (e.g. a {}, blockquote {}).
+ * ---
+ * @example
+ * ul {
+ *   list-style: square outside;
+ * }
+ */
+
+/**
+ * Objects 
+ * ---
+ * Design patterns.
+ * No cosmetics.
+ * Begin using classes exclusively.
+ * Agnostically named (e.g. .ui-list{}).
+ * ---
+ * @example
+ * .ui-list {
+ *   margin: 0;
+ *   padding: 0;
+ *   list-style: none;
+ * }
+ * .ui-list__item {
+ *   padding: $spacing-unit;
+ * }
+ */
+
+/**
+ * Components
+ * ---
+ * Designed pieces of UI.
+ * Still only using classes.
+ * More explicitly named (e.g. .products-list{}).
+ * ---
+ * @example
+ * .products-list {
+ *   @include font-brand();
+ *   border-top: 1px solid $color-ui;
+ * }
+ * .products-list__item {
+ *   border-bottom: 1px solid $color-ui;
+ * }
+ */
+
+/**
+ * Trumps
+ * ---
+ * Overrides, helpers, utilities.
+ * Only affect one piece of the DOM at a time.
+ * May carry !important
+ * ---
+ * @example
+ * .one-half { width: 50% !important; }
+ */
